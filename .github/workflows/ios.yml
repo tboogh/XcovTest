@@ -22,7 +22,7 @@ jobs:
         # uses: maierj/fastlane-action@a17717b67f153f900ec39b12da587067911b8c56
         uses: maierj/fastlane-action@v2.2.0
         env:
-          TESTKEY: ${{ secrets.TESTKEY }}
+          REPOKEY: ${{ secrets.TESTKEY }}
         with:
           # The lane that should be executed.
           lane: test
