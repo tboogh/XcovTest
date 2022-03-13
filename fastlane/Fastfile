@@ -6,7 +6,7 @@
 #     https://docs.fastlane.tools/actions
 #
 # For a list of all available plugins, check out
-#
+#/Users/tobiasboogh/Projects/Private/XcovTest/fastlane/xcov_report/xccovreport-0.xccovreport
 #     https://docs.fastlane.tools/plugins/available-plugins
 #
 
@@ -18,6 +18,15 @@ default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :test do
-    
+    scan(
+        project: "XcovTest.xcodeproj",
+        code_coverage: true
+    )
+    # UI.important "PATH:" ENV["SCAN_GENERATED_XCRESULT_PATH"]
+    xcov(
+        project: "XcovTest.xcodeproj",
+        coveralls_repo_token: ENV["TESTKEY"],
+        xccov_file_direct_path: ENV["SCAN_GENERATED_XCRESULT_PATH"]
+    )
   end
 end
