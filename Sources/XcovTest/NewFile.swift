@@ -6,4 +6,5 @@ class NewFile {
     }
 
     public var name: String
+    public var temporary: Bool?
 }
