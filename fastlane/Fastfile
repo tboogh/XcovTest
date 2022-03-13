@@ -22,10 +22,5 @@ platform :ios do
         project: "XcovTest.xcodeproj",
         code_coverage: true
     )
-    xcov(
-        project: "XcovTest.xcodeproj",
-        coveralls_repo_token: ENV["REPOKEY"],
-        xccov_file_direct_path: ENV["SCAN_GENERATED_XCRESULT_PATH"]
-    )
   end
 end
