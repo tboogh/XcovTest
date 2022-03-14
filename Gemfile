@@ -1,4 +1,4 @@
 source "https://rubygems.org"
 
 gem "fastlane"
-gem "xcov"
+gem 'nokogiri', :git => 'https://github.com/tboogh/xcov.git', :branch => 'add-params'
