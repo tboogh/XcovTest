@@ -24,7 +24,7 @@ platform :ios do
     )
     git_branch = ENV['BITRISE_GIT_BRANCH']
     git_branch_destination = ENV['BITRISEIO_GIT_BRANCH_DEST']
-    pull_request_id = ENV['BITRISE_PULL_REQUEST']
+    pull_request_id = ENV['BITRISEIO_PULL_REQUEST_MERGE_BRANCH']
     repo_url = ENV['BITRISEIO_PULL_REQUEST_REPOSITORY_URL']
     xcov(
         project: "XcovTest.xcodeproj",
