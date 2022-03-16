@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/tboogh/xcov.git
-  revision: e1f79f96731befde976eb3ec916b8513115f5d88
+  revision: 6a687145f5233d2e495e4c543f1aaad0b5da171c
   branch: add-params
   specs:
     xcov (1.8.1)
