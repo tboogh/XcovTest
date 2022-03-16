@@ -28,7 +28,7 @@ platform :ios do
     repo_url = ENV['BITRISEIO_PULL_REQUEST_REPOSITORY_URL']
     xcov(
         project: "XcovTest.xcodeproj",
-        coveralls_repo_token: ENV["REPOKEY"],
+        coveralls_repo_token: ENV["CoverallsKey"],
         coveralls_service_build_url: repo_url,
         coveralls_service_number: ENV['BITRISE_BUILD_NUMBER'],
         coveralls_service_branch: git_branch_destination,
