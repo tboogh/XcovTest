@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/tboogh/xcov.git
-  revision: fcbc60d1e161a6b9816626d39e2601a5b31ee6ce
+  revision: e1f79f96731befde976eb3ec916b8513115f5d88
   branch: add-params
   specs:
     xcov (1.8.1)
@@ -21,7 +21,7 @@ GEM
     artifactory (3.0.15)
     atomos (0.1.3)
     aws-eventstream (1.2.0)
-    aws-partitions (1.567.0)
+    aws-partitions (1.568.0)
     aws-sdk-core (3.130.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
