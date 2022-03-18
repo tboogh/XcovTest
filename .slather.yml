@@ -1,4 +1,4 @@
 xcodeproj: XcovTest.xcodeproj
-coverage_service: bitrise
+coverage_service: coveralls
 scheme: XcovTest
 coveralls: true
