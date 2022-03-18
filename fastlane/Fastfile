@@ -22,11 +22,7 @@ platform :ios do
         project: "XcovTest.xcodeproj",
         code_coverage: true
     )
-    slather(
-      scheme: "XcovTest",
-      proj: "XcovTest.xcodeproj",
-      coveralls: true
-    )
+    slather()
     # ENV["CoverallsKey"]
     # git_branch = ENV['BITRISE_GIT_BRANCH']
     # git_branch_destination = ENV['BITRISEIO_GIT_BRANCH_DEST']
