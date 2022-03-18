@@ -22,18 +22,24 @@ platform :ios do
         project: "XcovTest.xcodeproj",
         code_coverage: true
     )
-    git_branch = ENV['BITRISE_GIT_BRANCH']
-    git_branch_destination = ENV['BITRISEIO_GIT_BRANCH_DEST']
-    pull_request_id = ENV['BITRISEIO_PULL_REQUEST_MERGE_BRANCH']
-    repo_url = ENV['BITRISEIO_PULL_REQUEST_REPOSITORY_URL']
-    xcov(
-        project: "XcovTest.xcodeproj",
-        coveralls_repo_token: ENV["CoverallsKey"],
-        coveralls_service_build_url: repo_url,
-        coveralls_service_number: ENV['BITRISE_BUILD_NUMBER'],
-        coveralls_service_branch: git_branch_destination,
-        coveralls_service_pull_request: pull_request_id,
-        xccov_file_direct_path: ENV["SCAN_GENERATED_XCRESULT_PATH"]
+    slather(
+      scheme: "XcovTest",
+      proj: "XcovTest.xcodeproj",
+      coveralls: true
     )
+    # ENV["CoverallsKey"]
+    # git_branch = ENV['BITRISE_GIT_BRANCH']
+    # git_branch_destination = ENV['BITRISEIO_GIT_BRANCH_DEST']
+    # pull_request_id = ENV['BITRISEIO_PULL_REQUEST_MERGE_BRANCH']
+    # repo_url = ENV['BITRISEIO_PULL_REQUEST_REPOSITORY_URL']
+    # xcov(
+    #     project: "XcovTest.xcodeproj",
+    #     coveralls_repo_token: ENV["CoverallsKey"],
+    #     coveralls_service_build_url: repo_url,
+    #     coveralls_service_number: ENV['BITRISE_BUILD_NUMBER'],
+    #     coveralls_service_branch: git_branch_destination,
+    #     coveralls_service_pull_request: pull_request_id,
+    #     xccov_file_direct_path: ENV["SCAN_GENERATED_XCRESULT_PATH"]
+    # )
   end
 end
