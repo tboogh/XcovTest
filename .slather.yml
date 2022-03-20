@@ -2,3 +2,4 @@ xcodeproj: XcovTest.xcodeproj
 coverage_service: coveralls
 scheme: XcovTest
 coveralls: true
+ci_service: bitrise
