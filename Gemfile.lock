@@ -41,6 +41,7 @@ PLATFORMS
   arm64-darwin-21
 
 DEPENDENCIES
+  activesupport (~> 7.0)
   slather (~> 2.7)
 
 BUNDLED WITH
