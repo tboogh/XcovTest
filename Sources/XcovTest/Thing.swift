@@ -1,5 +1,6 @@
 import Foundation
-struct Thing: Identifiable {
+
+struct Thing: Identifiable, Equatable {
 
     let id: UUID = UUID()
     let name: String
@@ -7,3 +8,4 @@ struct Thing: Identifiable {
     let tentacles: Int
     let angry: Bool
 }
+
